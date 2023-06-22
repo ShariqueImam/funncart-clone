@@ -7,7 +7,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white py-12 sm:py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="text-center">
@@ -15,7 +15,7 @@ export default function Stats() {
               Trusted by Artisans and Customers
             </h2>
             <p className="mt-4 text-lg leading-8 text-gray-600">
-              Here are some of our current progress 
+              Here are some of our current progress
             </p>
           </div>
           <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
