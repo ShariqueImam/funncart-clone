@@ -8,7 +8,7 @@ const style = {};
 const ProductsRoute = () => {
   return (
     <Animator>
-      <Products cat={"allproducts"} categoryHeading={'All Prodcuts'}/>
+      <Products cat={"allproducts"} categoryHeading={"All Prodcuts"} />
     </Animator>
   );
 };

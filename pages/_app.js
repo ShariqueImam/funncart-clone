@@ -26,18 +26,7 @@ function MyApp({ Component, pageProps }) {
           content="Funncart | Market place for handcrafted products"
         />
       </Head>
-      {/* bg-[#f6f6f6] */}
-      <div className="overflow-x-hidden  z-0">
-        {/* <p
-          style={{ fontFamily: "Playfair Display, serif" }}
-          className="py-2 text-sm text-center bg-red-800 text-white"
-        >
-          11.11 Sale Now Active. Limited Time Discounts{" "}
-        </p> */}
-        {/* <p className="py-1 text-xs text-center bg-primary text-white">
-          FREE SHIPPING ON ALL ORDERS RS. 1999 & ABOVE
-        </p> */}
-        <Navbar click={Click} />
+      <div className="overflow-y-hidden overflow-x-hidden  z-0">
         <AnimatePresence exitBeforeEnter>
           <div
             key={asPath}
@@ -47,7 +36,7 @@ function MyApp({ Component, pageProps }) {
           >
             <Component {...pageProps} />
           </div>
-          <Footer />
+
           {/* adding the whatsapp button as CTA */}
           <a
             href="https://wa.me/+923343866227/?text="

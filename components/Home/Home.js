@@ -47,7 +47,9 @@ const Home = ({}) => {
     <div className={style.wrapper} style={{ fontFamily: "Poppins,serif" }}>
       <FeaturedBackground1>
         <div className={style.mainContent}>
-          <h2 className={style.heading}>A Marketplace for handcrafted products</h2>
+          <h2 className={style.heading}>
+            A Marketplace for handcrafted products
+          </h2>
           <p className={style.para}>Free shipping on orders above Rs.2999</p>
           <Link href="/products">
             <div className={style.btnContainer}>
