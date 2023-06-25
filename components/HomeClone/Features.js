@@ -40,7 +40,7 @@ export default function Example() {
        Why choose us
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8">
+        <div className="grid grid-cols-1 gap-y-12 mt-16 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8">
           {incentives.map((incentive) => (
             <div key={incentive.name}>
               <img src={incentive.imageSrc} alt="" className="h-24 w-auto" />
