@@ -1,28 +1,28 @@
 const incentives = [
   {
-    name: "Free returns",
+    name: "Promoting Pakistani Culture",
     description:
-      "Not what you expected ? Place it back in the parcel and attach the pre-paid postage stamp.",
+      "We passionately promote Pakistani culture and art, sharing its beauty with the world.",
     imageSrc:
       "https://tailwindui.com/img/ecommerce/icons/icon-delivery-light.svg",
   },
   {
-    name: "Same day delivery",
+    name: "Swift Delivery",
     description:
-      "We offer a delivery service that has never been done before. Checkout today and receive your products within hours.",
+      "We ensure seamless and timely delivery, guaranteeing your order reaches your doorstep promptly",
     imageSrc: "https://tailwindui.com/img/ecommerce/icons/icon-fast-checkout-light.svg",
   },
   {
-    name: "All year discount",
+    name: "Exquisite Quality",
     description:
-      "Looking for a deal? You can use the code 'ALLYEAR' at the checkout and get the money off all year round.",
+      "We offer handicrafts of exceptional quality, meticulously crafted with the finest materials.",
     imageSrc:
       "https://tailwindui.com/img/ecommerce/icons/icon-gift-card-light.svg",
   },
   {
-    name: "For the planet",
+    name: "Empowering Artisans",
     description:
-      "We have pledged 1% of sales to the preservation and restoration of the natural environment",
+      "We empower artisans through fair compensation and promotion of their incredible craftsmanship.",
     imageSrc:
       "https://tailwindui.com/img/ecommerce/icons/icon-gift-card-light.svg",
   },
