@@ -10,7 +10,7 @@ export default function Stats() {
     <div className="bg-gray-50 py-12 sm:py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
-          <div className="mx-auto max-w-xl text-center">
+          <div className="mx-auto text-center">
           <h2 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">
           Our Statistics
           </h2>
