@@ -93,31 +93,31 @@ const navigation = {
 };
 const categories = [
   {
-    name: "New Arrivals",
+    name: "Table Top",
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg",
   },
   {
-    name: "Productivity",
+    name: "Vintage",
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg",
   },
   {
-    name: "Workspace",
+    name: "Wood work",
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg",
   },
   {
-    name: "Accessories",
+    name: "Table Top",
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg",
   },
   {
-    name: "Sale",
+    name: "Gifts",
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg",
@@ -203,7 +203,7 @@ export default function Example() {
             id="category-heading"
             className="text-2xl font-bold tracking-tight text-gray-900"
           >
-            Shop by Category
+            Popular categories
           </h2>
           <a
             href="#"
