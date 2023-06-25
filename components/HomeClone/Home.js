@@ -169,12 +169,10 @@ export default function Example() {
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    But Authentic Pakistani Handicrafts{" "}
+                    Discover Authentic Pakistani Handicrafts{" "}
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    This year, our new summer collection will shelter you from
-                    the harsh elements of a world that doesn't care if you live
-                    or die
+                    We promote Pakistani culture by showcasing the unique handicrafts created by our talented artisans
                   </p>
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
