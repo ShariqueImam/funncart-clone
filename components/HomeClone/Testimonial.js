@@ -1,23 +1,23 @@
 const testimonials = [
   {
-    body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+    body: "Good material. Satisfied. Thanks for the mini gift of chocolate. That made my day",
     author: {
-      name: "Leslie Alexander",
-      handle: "lesliealexander",
+      name: "Hammad Baig",
+      handle: "Hammad Baig",
     },
   },
   {
-    body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+    body: "Delivery waqt par hui aur sath mein aapki khaas mohabbat se bhare hue note or chocolate ne mera dil jeet liya",
     author: {
-      name: "Leslie Alexander",
-      handle: "lesliealexander",
+      name: "Saima Malik",
+      handle: "Saima Malik",
     },
   },
   {
-    body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+    body: "Outstanding quality reflecting Pakistani heritage. Great packaging and amazing customer service. Highly recommended!",
     author: {
-      name: "Leslie Alexander",
-      handle: "lesliealexander",
+      name: "Ali Hassan",
+      handle: "Ali Hassan",
     },
   },
 ];
