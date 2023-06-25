@@ -3,10 +3,10 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 const navigation = [
-  { name: "Women", href: "/" },
-  { name: "Men", href: "/" },
-  { name: "Company", href: "/" },
-  { name: "Stores", href: "/" },
+  { name: "Shop now", href: "/" },
+  { name: "About us", href: "/" },
+  { name: "Become a Seller", href: "/" },
+  { name: "Contact us", href: "/" },
 ];
 
 export default function Example() {
@@ -174,14 +174,12 @@ export default function Example() {
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
                     We promote Pakistani culture by showcasing the unique handicrafts created by our talented artisans
                   </p>
-                  <div className="mt-10 flex items-center gap-x-6">
-                    <a
-                      href="/"
-                      className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    >
-                      Shop Now
-                    </a>
-                  </div>
+                  <button
+        type="button"
+        className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+      >
+        Shop Now
+      </button>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                   <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
