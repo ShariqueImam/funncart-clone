@@ -52,7 +52,7 @@ export default function Example() {
               <h3 className="mt-6 text-sm font-medium text-gray-900">
                 {incentive.name}
               </h3>
-              <p className="mt-2 text-sm text-gray-500">
+              <p className="mt-2 text-sm text-gray-500 text-center">
                 {incentive.description}
               </p>
             </div>
