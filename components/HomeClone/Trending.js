@@ -108,7 +108,6 @@ export default function Example() {
                         />
                       </div>
                       <div className="mt-6">
-                        <p className="text-sm text-gray-500">{product.color}</p>
                         <h3 className="mt-1 font-semibold text-gray-900">
                           <a href={product.href}>
                             <span className="absolute inset-0" />
