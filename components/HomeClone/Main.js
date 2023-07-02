@@ -6,7 +6,7 @@ import Category from "./Category";
 import Testimonial from "./Testimonial";
 import Trending from "./Trending";
 import Seller from "./Seller";
-import Footer from "./Footer";
+import Footer from "../Footer/Footer";
 const Main = () => {
   return (
     <div>

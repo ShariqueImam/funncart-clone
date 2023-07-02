@@ -1,7 +1,6 @@
 import "../styles/globals.css";
 import Head from "next/head";
 import Footer from "../components/Footer/Footer";
-import Navbar from "../components/Navbar/Navbar";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import { AnimatePresence } from "framer-motion";
@@ -35,6 +34,7 @@ function MyApp({ Component, pageProps }) {
             style={{ fontFamily: "Poppins,serif" }}
           >
             <Component {...pageProps} />
+            <Footer />
           </div>
 
           {/* adding the whatsapp button as CTA */}
