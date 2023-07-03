@@ -6,10 +6,11 @@ import Category from "./Category";
 import Testimonial from "./Testimonial";
 import Trending from "./Trending";
 import Seller from "./Seller";
-import Footer from "../Footer/Footer";
+import Nav from '../Navbar/Nav'
 const Main = () => {
   return (
     <div>
+      <Nav />
       <Home />
       <Stats />
       <Category />
@@ -17,7 +18,6 @@ const Main = () => {
       <Trending />
       <Testimonial />
       <Seller />
-      <Footer />
     </div>
   );
 };

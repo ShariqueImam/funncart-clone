@@ -1,15 +1,15 @@
 import React from "react";
 import AboutHome from "./AboutHome";
-import Footer from '../Footer/Footer'
-import Mission from './Mission'
-import Team from './Team'
+import Mission from "./Mission";
+import Nav from "../Navbar/Nav";
+import Team from "./Team";
 const About = () => {
   return (
     <div>
+      <Nav />
       <AboutHome />
       <Mission />
       <Team />
-      <Footer />
     </div>
   );
 };
