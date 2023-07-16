@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import Cookies from "js-cookie";
 const navigation = [
-  { name: "Shop now", href: "/" },
+  { name: "Shop now", href: "/shop-now" },
   { name: "About us", href: "/about" },
   { name: "Become a Seller", href: "/seller" },
   { name: "Contact us", href: "/contact" },
 ];
-const Nav = () => {
+const Nav = (props) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const handleCartClick = () => {};
   return (
     <div>
       {" "}
@@ -53,7 +54,10 @@ const Nav = () => {
               href="/"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
-              <section className="flex items-center justify-center">
+              <section
+                className="flex items-center justify-center"
+                onClick={handleCartClick}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -68,7 +72,7 @@ const Nav = () => {
                     d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
                   />
                 </svg>
-                <p className="p-1">{0}</p>{" "}
+                <p className="p-1">{0}</p>
               </section>
             </Link>
           </div>

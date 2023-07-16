@@ -1,38 +1,27 @@
 import "../styles/globals.css";
 import Head from "next/head";
 import Footer from "../components/Footer/Footer";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { AnimatePresence } from "framer-motion";
 import { BsWhatsapp } from "react-icons/bs";
-
+import Nav from "../components/Navbar/Nav";
+import Cart from "../components/Cart/Cart";
+import Cookies from "js-cookie";
 function MyApp({ Component, pageProps }) {
   const { asPath } = useRouter();
-  const [Click, setClick] = useState(false);
-  const handleClick = () => {
-    setClick(false);
+  const [CartClick, setCartClick] = useState(false);
+  const handleCartClick = () => {
+    // setCartClick(true);
   };
+
   return (
     <>
-      <Head>
-        <title key={"title"}>
-          Funncart | Market place for handcrafted products
-        </title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="shortcut icon" href="/fav1.png" type="image/x-icon" />
-        <meta
-          name="description"
-          content="Funncart | Market place for handcrafted products"
-        />
-      </Head>
       <div className="overflow-y-hidden overflow-x-hidden  z-0">
         <AnimatePresence exitBeforeEnter>
-          <div
-            key={asPath}
-            className="z-0 mt-16 md:mt-2"
-            onClick={handleClick}
-            style={{ fontFamily: "Poppins,serif" }}
-          >
+          <div key={asPath}>
+            <Cart CartClick={true} />
+            <Nav handleCartClick={handleCartClick} />
             <Component {...pageProps} />
             <Footer />
           </div>
@@ -51,3 +40,6 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
+// export async function getServerSideProps() {
+//   return;
+// }

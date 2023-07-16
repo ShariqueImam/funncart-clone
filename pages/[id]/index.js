@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import ProductDetails from "../../components/ProductDetails/ProductDetails";
+import ProductDescription from "../../components/ProductDescription/ProductDescription";
 import { useRouter } from "next/router";
-
 import client from "../api/client";
+import Nav from "../../components/Navbar/Nav";
+import ProductReviews from '../../components/ProductDescription/ProductReviews'
 const style = {
   wrapper: "",
 };
@@ -29,11 +30,12 @@ const index = () => {
     };
     getProduct();
   }, [router.isReady]);
-  // console.log(ProductData[0]);
   return (
     <>
-      {ProductData.length == 0 && <p className="h-[80vh]"></p>}
-      {ProductData.length > 0 && (
+      <Nav />
+      <ProductDescription />
+      <ProductReviews />
+      {/* {ProductData.length > 0 && (
         <ProductDetails
           productName={ProductData[0].name}
           price={ProductData[0].price}
@@ -53,9 +55,8 @@ const index = () => {
           stock={ProductData[0].stock}
           discount={ProductData[0].discount}
           category={ProductData[0].category}
-          // categoryColors={ProductData[0].categoryColors}
         />
-      )}
+      )} */}
     </>
   );
 };

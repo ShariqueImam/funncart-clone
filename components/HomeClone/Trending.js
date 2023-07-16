@@ -1,155 +1,122 @@
-import React from "react";
+import { StarIcon } from "@heroicons/react/20/solid";
 
-const trendingProducts = [
+const products = [
   {
     id: 1,
-    name: "Machined Pen",
-    color: "Black",
-    price: "$35",
-    href: "#",
+    name: "Organize Basic Set (Walnut)",
+    price: "$149",
+    rating: 5,
+    reviewCount: 38,
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg",
-    imageAlt:
-      "Black machined steel pen with hexagonal grip and small white logo at top.",
-    availableColors: [
-      { name: "Black", colorBg: "#111827" },
-      { name: "Brass", colorBg: "#FDE68A" },
-      { name: "Chrome", colorBg: "#E5E7EB" },
-    ],
+      "https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-01.jpg",
+    imageAlt: "TODO",
+    href: "slug-of-product",
   },
   {
-    id: 1,
-    name: "Machined Pen",
-    color: "Black",
-    price: "$35",
-    href: "#",
+    id: 2,
+    name: "Organize Pen Holder",
+    price: "$15",
+    rating: 5,
+    reviewCount: 18,
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg",
-    imageAlt:
-      "Black machined steel pen with hexagonal grip and small white logo at top.",
-    availableColors: [
-      { name: "Black", colorBg: "#111827" },
-      { name: "Brass", colorBg: "#FDE68A" },
-      { name: "Chrome", colorBg: "#E5E7EB" },
-    ],
+      "https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-02.jpg",
+    imageAlt: "TODO",
+    href: "slug-of-product",
   },
   {
-    id: 1,
-    name: "Machined Pen",
-    color: "Black",
-    price: "$35",
-    href: "#",
+    id: 3,
+    name: "Organize Sticky Note Holder",
+    price: "$15",
+    rating: 5,
+    reviewCount: 14,
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg",
-    imageAlt:
-      "Black machined steel pen with hexagonal grip and small white logo at top.",
-    availableColors: [
-      { name: "Black", colorBg: "#111827" },
-      { name: "Brass", colorBg: "#FDE68A" },
-      { name: "Chrome", colorBg: "#E5E7EB" },
-    ],
+      "https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-03.jpg",
+    imageAlt: "TODO",
+    href: "slug-of-product",
   },
   {
-    id: 1,
-    name: "Machined Pen",
-    color: "Black",
-    price: "$35",
-    href: "#",
+    id: 4,
+    name: "Organize Phone Holder",
+    price: "$15",
+    rating: 4,
+    reviewCount: 21,
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg",
-    imageAlt:
-      "Black machined steel pen with hexagonal grip and small white logo at top.",
-    availableColors: [
-      { name: "Black", colorBg: "#111827" },
-      { name: "Brass", colorBg: "#FDE68A" },
-      { name: "Chrome", colorBg: "#E5E7EB" },
-    ],
+      "https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-04.jpg",
+    imageAlt: "TODO",
+    href: "slug-of-product",
   },
 ];
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
 
 export default function Example() {
   return (
     <div className="bg-white">
-      <section aria-labelledby="trending-heading" className="bg-white">
-        <div className="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8 lg:py-32">
-          <div className="flex items-center justify-between px-4 sm:px-6 lg:px-0">
-            <h2
-              id="trending-heading"
-              className="text-2xl font-bold tracking-tight text-gray-900"
-            >
-              Trending products
-            </h2>
-            <a
-              href="#"
-              className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block"
-            >
-              See everything
-              <span aria-hidden="true"> &rarr;</span>
-            </a>
-          </div>
-
-          <div className="relative mt-8">
-            <div className="relative w-full overflow-x-auto">
-              <ul
-                role="list"
-                className="mx-4 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0"
-              >
-                {trendingProducts.map((product) => (
-                  <li
-                    key={product.id}
-                    className="inline-flex w-64 flex-col text-center lg:w-auto"
-                  >
-                    <div className="group relative">
-                      <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
-                        <img
-                          src={product.imageSrc}
-                          alt={product.imageAlt}
-                          className="h-full w-full object-cover object-center group-hover:opacity-75"
-                        />
-                      </div>
-                      <div className="mt-6">
-                        <h3 className="mt-1 font-semibold text-gray-900">
-                          <a href={product.href}>
-                            <span className="absolute inset-0" />
-                            {product.name}
-                          </a>
-                        </h3>
-                        <p className="mt-1 text-gray-900">{product.price}</p>
-                      </div>
-                    </div>
-
-                    <h4 className="sr-only">Available colors</h4>
-                    <ul
-                      role="list"
-                      className="mt-auto flex items-center justify-center space-x-3 pt-6"
-                    >
-                      {product.availableColors.map((color) => (
-                        <li
-                          key={color.name}
-                          className="h-4 w-4 rounded-full border border-black border-opacity-10"
-                          style={{ backgroundColor: color.colorBg }}
-                        >
-                          <span className="sr-only">{color.name}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-12 px-4 sm:hidden">
-            <a
-              href="#"
-              className="text-sm font-semibold text-indigo-600 hover:text-indigo-500"
-            >
-              See everything
-              <span aria-hidden="true"> &rarr;</span>
-            </a>
-          </div>
+      <div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">
+        <div className="px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 xl:px-0 mt-12 ">
+          <h2
+            id="category-heading"
+            className="text-2xl font-bold tracking-tight text-gray-900"
+          >
+            Trending Products
+          </h2>
+          <a
+            href="#"
+            className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block"
+          >
+            See Everything <span aria-hidden="true"> &rarr;</span>
+          </a>
         </div>
-      </section>
+        <div className="-mx-px grid grid-cols-2 border-l border-gray-200 sm:mx-0 md:grid-cols-3 lg:grid-cols-4 my-12">
+          {products.map((product) => (
+            <div
+              key={product.id}
+              className="group relative border-b border-r border-gray-200 p-4 sm:p-6"
+            >
+              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-200 group-hover:opacity-75">
+                <img
+                  src={product.imageSrc}
+                  alt={product.imageAlt}
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
+              <div className="pb-4 pt-10 text-center">
+                <h3 className="text-sm font-medium text-gray-900">
+                  <a href={product.href}>
+                    <span aria-hidden="true" className="absolute inset-0" />
+                    {product.name}
+                  </a>
+                </h3>
+                <div className="mt-3 flex flex-col items-center">
+                  <p className="sr-only">{product.rating} out of 5 stars</p>
+                  <div className="flex items-center">
+                    {[0, 1, 2, 3, 4].map((rating) => (
+                      <StarIcon
+                        key={rating}
+                        className={classNames(
+                          product.rating > rating
+                            ? "text-yellow-400"
+                            : "text-gray-200",
+                          "h-5 w-5 flex-shrink-0"
+                        )}
+                        aria-hidden="true"
+                      />
+                    ))}
+                  </div>
+                  <p className="mt-1 text-sm text-gray-500">
+                    {product.reviewCount} reviews
+                  </p>
+                </div>
+                <p className="mt-4 text-base font-medium text-gray-900">
+                  {product.price}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
